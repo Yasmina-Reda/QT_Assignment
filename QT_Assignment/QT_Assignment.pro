@@ -10,12 +10,15 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
+    order.cpp \
     signin.cpp
 
 HEADERS += \
+    order.h \
     signin.h
 
 FORMS += \
+    order.ui \
     signin.ui
 
 # Default rules for deployment.
