@@ -1,0 +1,33 @@
+//Chicken options
+Fried Chicken-1 piece
+Fried Chicken-2 pieces
+Fried Chicken-7 pieces
+Fried Chicken-10 pieces
+Chicken Sandwich-Small
+Chicken Sandwich-Medium
+Chicken Sandwich-Large
+Grilled Chicken
+
+//Meat options
+Steak-1 piece
+Steak-2 pieces
+Steak-3 pieces
+Beef Burger-Small
+Beef Burger-Medium
+Beef Burger-Large
+Burger Steak
+
+//Side Options
+Rice
+Fries
+Pasta 
+Vegetables
+
+//Beverages
+Orange Juice
+Soft Drink
+Water
+Coffee
+
+//Sauce
+Ketchup, Mayonnaise, Mustard, Honey Mustard, Thousand Islands, BBQ

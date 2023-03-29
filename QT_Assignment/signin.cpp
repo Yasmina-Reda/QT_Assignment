@@ -23,7 +23,7 @@ void SignIn::on_pushButton_signin_clicked()
     {
         if(ui->lineEdit_userName->text()==userN[i]) found=true;
     }
-    if (!found) {ui->label_Warning->setText("Error! Username Does Not Exist"); ui->lineEdit_userName->clear();}
+    if (!found) {ui->label_Warning->setText("Error! Username Does Not Exist"); ui->lineEdit_userName->clear(); ui->lineEdit_pswd->clear();/*in case a password was entered*/}
     else{
         found=false;
         for(i=0;i<size && !found;i++)
@@ -37,6 +37,9 @@ void SignIn::on_pushButton_signin_clicked()
            Order orderWindow(AccBalance[i-1]);
            orderWindow.setModal(true);
            orderWindow.exec();
+           ui->label_balanceVal->setText(QString::number(AccBalance[i-1]));
+           ui->lineEdit_userName->clear(); ui->lineEdit_pswd->clear();ui->label_balanceVal->clear();
+           ui->label_Warning->setText("You have been Signed Out");
         }
     }
 }

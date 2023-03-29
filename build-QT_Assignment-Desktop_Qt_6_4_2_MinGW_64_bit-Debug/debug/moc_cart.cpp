@@ -1,5 +1,5 @@
 /****************************************************************************
-** Meta object code from reading C++ file 'order.h'
+** Meta object code from reading C++ file 'cart.h'
 **
 ** Created by: The Qt Meta Object Compiler version 68 (Qt 6.4.2)
 **
@@ -7,10 +7,10 @@
 *****************************************************************************/
 
 #include <memory>
-#include "../../QT_Assignment/order.h"
+#include "../../QT_Assignment/cart.h"
 #include <QtCore/qmetatype.h>
 #if !defined(Q_MOC_OUTPUT_REVISION)
-#error "The header file 'order.h' doesn't include <QObject>."
+#error "The header file 'cart.h' doesn't include <QObject>."
 #elif Q_MOC_OUTPUT_REVISION != 68
 #error "This file was generated using the moc from 6.4.2. It"
 #error "cannot be used with the include files from this version of Qt."
@@ -25,28 +25,28 @@ QT_BEGIN_MOC_NAMESPACE
 QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 namespace {
-struct qt_meta_stringdata_Order_t {
+struct qt_meta_stringdata_Cart_t {
     uint offsetsAndSizes[6];
-    char stringdata0[6];
+    char stringdata0[5];
     char stringdata1[31];
     char stringdata2[1];
 };
 #define QT_MOC_LITERAL(ofs, len) \
-    uint(sizeof(qt_meta_stringdata_Order_t::offsetsAndSizes) + ofs), len 
-Q_CONSTINIT static const qt_meta_stringdata_Order_t qt_meta_stringdata_Order = {
+    uint(sizeof(qt_meta_stringdata_Cart_t::offsetsAndSizes) + ofs), len 
+Q_CONSTINIT static const qt_meta_stringdata_Cart_t qt_meta_stringdata_Cart = {
     {
-        QT_MOC_LITERAL(0, 5),  // "Order"
-        QT_MOC_LITERAL(6, 30),  // "on_pushButton_viewCart_clicked"
-        QT_MOC_LITERAL(37, 0)   // ""
+        QT_MOC_LITERAL(0, 4),  // "Cart"
+        QT_MOC_LITERAL(5, 30),  // "on_pushButton_Recharge_clicked"
+        QT_MOC_LITERAL(36, 0)   // ""
     },
-    "Order",
-    "on_pushButton_viewCart_clicked",
+    "Cart",
+    "on_pushButton_Recharge_clicked",
     ""
 };
 #undef QT_MOC_LITERAL
 } // unnamed namespace
 
-Q_CONSTINIT static const uint qt_meta_data_Order[] = {
+Q_CONSTINIT static const uint qt_meta_data_Cart[] = {
 
  // content:
       10,       // revision
@@ -68,48 +68,48 @@ Q_CONSTINIT static const uint qt_meta_data_Order[] = {
        0        // eod
 };
 
-Q_CONSTINIT const QMetaObject Order::staticMetaObject = { {
+Q_CONSTINIT const QMetaObject Cart::staticMetaObject = { {
     QMetaObject::SuperData::link<QDialog::staticMetaObject>(),
-    qt_meta_stringdata_Order.offsetsAndSizes,
-    qt_meta_data_Order,
+    qt_meta_stringdata_Cart.offsetsAndSizes,
+    qt_meta_data_Cart,
     qt_static_metacall,
     nullptr,
-    qt_incomplete_metaTypeArray<qt_meta_stringdata_Order_t,
+    qt_incomplete_metaTypeArray<qt_meta_stringdata_Cart_t,
         // Q_OBJECT / Q_GADGET
-        QtPrivate::TypeAndForceComplete<Order, std::true_type>,
-        // method 'on_pushButton_viewCart_clicked'
+        QtPrivate::TypeAndForceComplete<Cart, std::true_type>,
+        // method 'on_pushButton_Recharge_clicked'
         QtPrivate::TypeAndForceComplete<void, std::false_type>
     >,
     nullptr
 } };
 
-void Order::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
+void Cart::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, void **_a)
 {
     if (_c == QMetaObject::InvokeMetaMethod) {
-        auto *_t = static_cast<Order *>(_o);
+        auto *_t = static_cast<Cart *>(_o);
         (void)_t;
         switch (_id) {
-        case 0: _t->on_pushButton_viewCart_clicked(); break;
+        case 0: _t->on_pushButton_Recharge_clicked(); break;
         default: ;
         }
     }
     (void)_a;
 }
 
-const QMetaObject *Order::metaObject() const
+const QMetaObject *Cart::metaObject() const
 {
     return QObject::d_ptr->metaObject ? QObject::d_ptr->dynamicMetaObject() : &staticMetaObject;
 }
 
-void *Order::qt_metacast(const char *_clname)
+void *Cart::qt_metacast(const char *_clname)
 {
     if (!_clname) return nullptr;
-    if (!strcmp(_clname, qt_meta_stringdata_Order.stringdata0))
+    if (!strcmp(_clname, qt_meta_stringdata_Cart.stringdata0))
         return static_cast<void*>(this);
     return QDialog::qt_metacast(_clname);
 }
 
-int Order::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
+int Cart::qt_metacall(QMetaObject::Call _c, int _id, void **_a)
 {
     _id = QDialog::qt_metacall(_c, _id, _a);
     if (_id < 0)

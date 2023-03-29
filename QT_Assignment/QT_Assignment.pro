@@ -9,15 +9,18 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    cart.cpp \
     main.cpp \
     order.cpp \
     signin.cpp
 
 HEADERS += \
+    cart.h \
     order.h \
     signin.h
 
 FORMS += \
+    cart.ui \
     order.ui \
     signin.ui
 

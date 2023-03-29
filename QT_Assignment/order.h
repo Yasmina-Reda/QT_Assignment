@@ -12,11 +12,15 @@ class Order : public QDialog
     Q_OBJECT
 
 public:
-    explicit Order(int,QWidget *parent = nullptr);
+    explicit Order(int&,QWidget *parent = nullptr);
     ~Order();
+
+private slots:
+    void on_pushButton_viewCart_clicked();
 
 private:
     Ui::Order *ui;
+    int* balanceRef;
     QString chickenItem[8]={"Fried Chicken-1 piece", "Fried Chicken-2 pieces", "Fried Chicken-7 pieces", "Fried Chicken-10 pieces", "Chicken Sandwich-Small", "Chicken Sandwich-Medium", "Chicken Sandwich-Large", "Grilled Chicken"};
     int chickenPrice[8]={20,35,120,175,40,65,80,120};
     QString beefItem[7] ={"Steak-1 piece", "Steak-2 pieces", "Steak-3 pieces", "Beef Burger-Small", "Beef Burger-Medium", "Beef Burger-Large", "Burger Steak"};

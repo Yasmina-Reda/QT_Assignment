@@ -34,7 +34,7 @@ public:
     QPushButton *pushButton_signin;
     QLabel *label_balance;
     QLabel *label_balanceVal;
-    QLabel *Currency;
+    QLabel *label_Currency;
     QLabel *label_Warning;
     QMenuBar *menubar;
     QStatusBar *statusbar;
@@ -73,9 +73,9 @@ public:
         label_balanceVal = new QLabel(centralwidget);
         label_balanceVal->setObjectName("label_balanceVal");
         label_balanceVal->setGeometry(QRect(110, 190, 111, 16));
-        Currency = new QLabel(centralwidget);
-        Currency->setObjectName("Currency");
-        Currency->setGeometry(QRect(240, 190, 41, 16));
+        label_Currency = new QLabel(centralwidget);
+        label_Currency->setObjectName("label_Currency");
+        label_Currency->setGeometry(QRect(240, 190, 41, 16));
         label_Warning = new QLabel(centralwidget);
         label_Warning->setObjectName("label_Warning");
         label_Warning->setGeometry(QRect(110, 150, 251, 31));
@@ -104,7 +104,7 @@ public:
         pushButton_signin->setText(QCoreApplication::translate("SignIn", "Sign in", nullptr));
         label_balance->setText(QCoreApplication::translate("SignIn", "Balance:", nullptr));
         label_balanceVal->setText(QCoreApplication::translate("SignIn", "label", nullptr));
-        Currency->setText(QCoreApplication::translate("SignIn", "L.E.", nullptr));
+        label_Currency->setText(QCoreApplication::translate("SignIn", "L.E.", nullptr));
         label_Warning->setText(QCoreApplication::translate("SignIn", "label", nullptr));
     } // retranslateUi
 

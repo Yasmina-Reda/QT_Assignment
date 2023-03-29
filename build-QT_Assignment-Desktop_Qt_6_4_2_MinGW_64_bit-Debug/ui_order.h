@@ -82,7 +82,7 @@ public:
         label_Price->setGeometry(QRect(140, 260, 81, 31));
         label_showNumItems = new QLabel(Order);
         label_showNumItems->setObjectName("label_showNumItems");
-        label_showNumItems->setGeometry(QRect(290, 300, 61, 21));
+        label_showNumItems->setGeometry(QRect(300, 310, 61, 16));
         label_showPrice = new QLabel(Order);
         label_showPrice->setObjectName("label_showPrice");
         label_showPrice->setGeometry(QRect(230, 260, 61, 31));

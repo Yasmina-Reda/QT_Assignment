@@ -128,7 +128,7 @@
      <string>label</string>
     </property>
    </widget>
-   <widget class="QLabel" name="Currency">
+   <widget class="QLabel" name="label_Currency">
     <property name="geometry">
      <rect>
       <x>240</x>
