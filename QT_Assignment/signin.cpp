@@ -1,6 +1,7 @@
 #include "signin.h"
 #include "ui_signin.h"
 #include "order.h"
+#include "signup.h"
 
 SignIn::SignIn(QWidget *parent)
     : QMainWindow(parent)
@@ -23,7 +24,7 @@ void SignIn::on_pushButton_signin_clicked()
     {
         if(ui->lineEdit_userName->text()==userN[i]) found=true;
     }
-    if (!found) {ui->label_Warning->setText("Error! Username Does Not Exist"); ui->lineEdit_userName->clear(); ui->lineEdit_pswd->clear();/*in case a password was entered*/}
+    if (!found) {ui->label_Warning->setText("Error! Username Does Not Exist. Try signing in instead "+ QString::number(size)); ui->lineEdit_userName->clear(); ui->lineEdit_pswd->clear();/*in case a password was entered*/}
     else{
         found=false;
         for(i=0;i<size && !found;i++)
@@ -44,4 +45,12 @@ void SignIn::on_pushButton_signin_clicked()
     }
 }
 
+
+
+void SignIn::on_pushButton_signUp_clicked()
+{
+    signUp signUpWindow(userN,Pswds,AccBalance, size, maxSize);
+    signUpWindow.setModal(true);
+    signUpWindow.exec();
+}
 

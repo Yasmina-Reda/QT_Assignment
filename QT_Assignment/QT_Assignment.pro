@@ -12,17 +12,20 @@ SOURCES += \
     cart.cpp \
     main.cpp \
     order.cpp \
-    signin.cpp
+    signin.cpp \
+    signup.cpp
 
 HEADERS += \
     cart.h \
     order.h \
-    signin.h
+    signin.h \
+    signup.h
 
 FORMS += \
     cart.ui \
     order.ui \
-    signin.ui
+    signin.ui \
+    signup.ui
 
 # Default rules for deployment.
 qnx: target.path = /tmp/$${TARGET}/bin
