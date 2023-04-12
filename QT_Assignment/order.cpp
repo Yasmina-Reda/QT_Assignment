@@ -23,6 +23,7 @@ void Order::on_pushButton_viewCart_clicked()
     Cart opencart(balanceRef, ind1, ind2, ind3, ind4, ind5);
     opencart.setModal(true);
     opencart.exec();
+    //after cart is exited, update displayed balance
     ui->label_balanceVal_order->setText(QString::number(*balanceRef));
 
 }
