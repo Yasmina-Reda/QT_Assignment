@@ -18,19 +18,43 @@ public:
 private slots:
     void on_pushButton_viewCart_clicked();
 
+    void on_pushButton_addCart_clicked();
+
+    void on_chicken_activated(int index);
+
+    void on_meat_activated(int index);
+
+    void on_sideoptions_activated(int index);
+
+    void on_beverages_activated(int index);
+
+    void on_sauces_activated(int index);
+
 private:
     Ui::Order *ui;
     int* balanceRef;
-    QString chickenItem[8]={"Fried Chicken-1 piece", "Fried Chicken-2 pieces", "Fried Chicken-7 pieces", "Fried Chicken-10 pieces", "Chicken Sandwich-Small", "Chicken Sandwich-Medium", "Chicken Sandwich-Large", "Grilled Chicken"};
-    int chickenPrice[8]={20,35,120,175,40,65,80,120};
-    QString beefItem[7] ={"Steak-1 piece", "Steak-2 pieces", "Steak-3 pieces", "Beef Burger-Small", "Beef Burger-Medium", "Beef Burger-Large", "Burger Steak"};
-    int beefPrice[7]={80,150,220,60,85,100,140};
-    QString sideItem[4]={"Rice", "Fries", "Pasta", "Vegetables"};
-    int sidePrice[4]={45,30,50,35};
-    QString beverageItem[4] ={"Orange Juice", "Soft Drink", "Water", "Coffee"};
-    int beveragePrice[4]={30,20,10,15};
-    QString sauceItem[6]={"Ketchup", "Mayonnaise", "Mustard", "Honey Mustard", "Thousand Islands", "BBQ"};
-    int saucePrice[6]={5,5,5,8,10,7};
+    QString chickenItem[9]={" ","Fried Chicken-1 piece", "Fried Chicken-2 pieces", "Fried Chicken-7 pieces", "Fried Chicken-10 pieces", "Chicken Sandwich-Small", "Chicken Sandwich-Medium", "Chicken Sandwich-Large", "Grilled Chicken"};
+    int chickenPrice[9]={0,20,35,120,175,40,65,80,120};
+    QString beefItem[8] ={" ","Steak-1 piece", "Steak-2 pieces", "Steak-3 pieces", "Beef Burger-Small", "Beef Burger-Medium", "Beef Burger-Large", "Burger Steak"};
+    int beefPrice[8]={0,80,150,220,60,85,100,140};
+    QString sideItem[5]={" ","Rice", "Fries", "Pasta", "Vegetables"};
+    int sidePrice[5]={0,45,30,50,35};
+    QString beverageItem[5] ={" ","Orange Juice", "Soft Drink", "Water", "Coffee"};
+    int beveragePrice[5]={0,30,20,10,15};
+    QString sauceItem[7]={" ","Ketchup", "Mayonnaise", "Mustard", "Honey Mustard", "Thousand Islands", "BBQ"};
+    int saucePrice[7]={0,5,5,5,8,10,7};
+    QString orderchicken = " ";
+    QString orderbeef = " ";
+    QString orderside = " ";
+    QString ordersauce = " ";
+    QString orderbeverage = " ";
+    bool cartfull=false;
+    int numberofitems=0;
+    int ind1;
+    int ind2;
+    int ind3;
+    int ind4;
+    int ind5;
 };
 
 #endif // ORDER_H
