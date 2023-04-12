@@ -34,19 +34,19 @@ public:
         Cart->resize(640, 480);
         pushButton_Recharge = new QPushButton(Cart);
         pushButton_Recharge->setObjectName("pushButton_Recharge");
-        pushButton_Recharge->setGeometry(QRect(20, 230, 161, 41));
+        pushButton_Recharge->setGeometry(QRect(160, 230, 161, 41));
         lineEdit_Recharge = new QLineEdit(Cart);
         lineEdit_Recharge->setObjectName("lineEdit_Recharge");
-        lineEdit_Recharge->setGeometry(QRect(210, 230, 381, 31));
+        lineEdit_Recharge->setGeometry(QRect(350, 230, 171, 31));
         label_balanceVal_cart = new QLabel(Cart);
         label_balanceVal_cart->setObjectName("label_balanceVal_cart");
-        label_balanceVal_cart->setGeometry(QRect(110, 190, 111, 16));
+        label_balanceVal_cart->setGeometry(QRect(320, 190, 111, 16));
         label_balance_cart = new QLabel(Cart);
         label_balance_cart->setObjectName("label_balance_cart");
-        label_balance_cart->setGeometry(QRect(20, 190, 81, 16));
+        label_balance_cart->setGeometry(QRect(230, 190, 81, 16));
         label_Currency_cart = new QLabel(Cart);
         label_Currency_cart->setObjectName("label_Currency_cart");
-        label_Currency_cart->setGeometry(QRect(240, 190, 41, 16));
+        label_Currency_cart->setGeometry(QRect(450, 190, 41, 16));
 
         retranslateUi(Cart);
 
