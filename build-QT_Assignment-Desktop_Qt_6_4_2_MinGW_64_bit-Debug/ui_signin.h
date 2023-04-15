@@ -49,10 +49,10 @@ public:
         centralwidget->setObjectName("centralwidget");
         label_WLCM = new QLabel(centralwidget);
         label_WLCM->setObjectName("label_WLCM");
-        label_WLCM->setGeometry(QRect(20, 10, 141, 16));
+        label_WLCM->setGeometry(QRect(20, 10, 231, 16));
         label_Prompt = new QLabel(centralwidget);
         label_Prompt->setObjectName("label_Prompt");
-        label_Prompt->setGeometry(QRect(20, 30, 261, 31));
+        label_Prompt->setGeometry(QRect(20, 30, 411, 31));
         label_userprompt = new QLabel(centralwidget);
         label_userprompt->setObjectName("label_userprompt");
         label_userprompt->setGeometry(QRect(20, 70, 81, 16));
@@ -107,9 +107,9 @@ public:
         lineEdit_userName->setText(QString());
         pushButton_signin->setText(QCoreApplication::translate("SignIn", "Sign in", nullptr));
         label_balance->setText(QCoreApplication::translate("SignIn", "Balance:", nullptr));
-        label_balanceVal->setText(QCoreApplication::translate("SignIn", "label", nullptr));
+        label_balanceVal->setText(QString());
         label_Currency->setText(QCoreApplication::translate("SignIn", "L.E.", nullptr));
-        label_Warning->setText(QCoreApplication::translate("SignIn", "label", nullptr));
+        label_Warning->setText(QString());
         pushButton_signUp->setText(QCoreApplication::translate("SignIn", "Sign up", nullptr));
     } // retranslateUi
 
