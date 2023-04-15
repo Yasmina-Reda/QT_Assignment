@@ -19,48 +19,44 @@ signUp::~signUp()
     delete ui;
 }
 
-//not working
-//to do later
-//check and clear
-//test size: servers overloaded: try again later
-//also maybe have password have unique characters and numebrs?
-//test
-//message: you have created an account please proceed to checkput to first charge your balance
 
 void signUp::on_pushButton_clicked()
 {
+    //if no username entered
     if(ui->lineEdit_userName->text()=="")
     {ui->label_errorMsg->setText("Error: No Username Entered");
      ui->lineEdit_pswd->clear();
      ui->lineEdit_confirmPswd->clear();
     }
 
+    //if no pswd
     else if(ui->lineEdit_pswd->text()=="")
     {ui->label_errorMsg->setText("Error: No Password Entered");
      ui->lineEdit_confirmPswd->clear();
     }
 
+    //if confirm pswd does not match pswd
     else if(ui->lineEdit_confirmPswd->text()!=ui->lineEdit_pswd->text())
     {ui->label_errorMsg->setText("Error: Incorrect Password reentered");
      ui->lineEdit_confirmPswd->clear();
     }
 
+    //if reached maxsize
     else if (*size==maxSize)
     {
-        //use the pop up error msg thing in video: servers overloaded, please try again later;
-        ui->lineEdit_userName->clear();
-        ui->lineEdit_pswd->clear();
-        ui->lineEdit_confirmPswd->clear();
+        ui->label_errorMsg->setText("Servers overloaded, please try again later.");
+
     }
 
     else{
+        //tests if username is duplicated
         exist=false;
-        for(int i=*size; i<maxSize&&!exist; i++)
+        //loop over array as long as not duplicated
+        for(int i=0; i<maxSize&&!exist; i++)
         {
             if(ui->lineEdit_userName->text()==*(userNames+i)) exist=true;
         }
 
-        //this line does not work
         if(exist==true)
         {
             ui->label_errorMsg->setText("Error: Username already exists");
@@ -68,6 +64,7 @@ void signUp::on_pushButton_clicked()
 
         else
         {
+            //pswd must be at least 3 characters
             if(ui->lineEdit_pswd->text().length()<3)
             {
                 ui->label_errorMsg->setText("Error: Password cannot be shorter than 3 characters");
@@ -75,17 +72,17 @@ void signUp::on_pushButton_clicked()
 
             else
             {
+                //update arrays and increase the size
                 *(userNames+*size)=ui->lineEdit_userName->text();
                 *(passwords+*size)=ui->lineEdit_pswd->text();
                 *(accounts+*size)=0;
                 (*size)++;
-                ui->label_errorMsg->setText("Account successfully created");
+                ui->label_errorMsg->setText("Account successfully created. Proceed to checkout to charge your balance");
             }
         }
 
 
     }
 }
-
 
 

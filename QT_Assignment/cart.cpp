@@ -30,8 +30,11 @@ void Cart::on_pushButton_Recharge_clicked()
     if(ui->lineEdit_Recharge->text()=="") ui->lineEdit_Recharge->setText("Please Enter Amount to be Recharged");
     else if((ui->lineEdit_Recharge->text()).toInt()<=0)ui->lineEdit_Recharge->setText("Please Enter a Positive Value to be Recharged");
     else {
+        //change balance in array
         *(balanceRef)+=(ui->lineEdit_Recharge->text()).toInt();
+        //update the displayed balance
         ui->label_balanceVal_cart->setText(QString::number(*balanceRef));
+        //clear the field
         ui->lineEdit_Recharge->clear();
     }
 }

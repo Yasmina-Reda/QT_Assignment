@@ -38,10 +38,10 @@ public:
         signUp->resize(480, 640);
         pushButton = new QPushButton(signUp);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(270, 180, 91, 31));
+        pushButton->setGeometry(QRect(370, 90, 91, 31));
         label_errorMsg = new QLabel(signUp);
         label_errorMsg->setObjectName(QString::fromUtf8("label_errorMsg"));
-        label_errorMsg->setGeometry(QRect(20, 180, 201, 31));
+        label_errorMsg->setGeometry(QRect(20, 180, 441, 31));
         label_2 = new QLabel(signUp);
         label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setGeometry(QRect(190, 30, 51, 16));
@@ -73,7 +73,7 @@ public:
     {
         signUp->setWindowTitle(QCoreApplication::translate("signUp", "Dialog", nullptr));
         pushButton->setText(QCoreApplication::translate("signUp", "Sign up", nullptr));
-        label_errorMsg->setText(QCoreApplication::translate("signUp", "Error message", nullptr));
+        label_errorMsg->setText(QString());
         label_2->setText(QCoreApplication::translate("signUp", "Sign up", nullptr));
         label_userName->setText(QCoreApplication::translate("signUp", "User name", nullptr));
         label_pswd->setText(QCoreApplication::translate("signUp", "Password", nullptr));

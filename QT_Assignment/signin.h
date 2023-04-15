@@ -23,7 +23,9 @@ private slots:
 
 private:
     Ui::SignIn *ui;
+    //max size to sign up
     int maxSize=15;
+    //size of actual array
     int size=8;
     QString userN[15]={"Nakajima","Dazai","Kunikida", "Yosano", "Kyoka", "Akutagawa", "Rampo", "Chuuya"};
     QString Pswds[15]={"BBTML18","NLH22", "Doppo22", "TSND25", "DSnow14", "RSHMN20", "WBD26","FTTS22"};
