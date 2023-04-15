@@ -36,6 +36,7 @@ public:
     QLabel *label_balanceVal;
     QLabel *label_Currency;
     QLabel *label_Warning;
+    QPushButton *pushButton_signUp;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -78,7 +79,10 @@ public:
         label_Currency->setGeometry(QRect(240, 190, 41, 16));
         label_Warning = new QLabel(centralwidget);
         label_Warning->setObjectName(QString::fromUtf8("label_Warning"));
-        label_Warning->setGeometry(QRect(110, 150, 251, 31));
+        label_Warning->setGeometry(QRect(110, 150, 401, 31));
+        pushButton_signUp = new QPushButton(centralwidget);
+        pushButton_signUp->setObjectName(QString::fromUtf8("pushButton_signUp"));
+        pushButton_signUp->setGeometry(QRect(20, 230, 81, 31));
         SignIn->setCentralWidget(centralwidget);
         menubar = new QMenuBar(SignIn);
         menubar->setObjectName(QString::fromUtf8("menubar"));
@@ -106,6 +110,7 @@ public:
         label_balanceVal->setText(QString());
         label_Currency->setText(QCoreApplication::translate("SignIn", "L.E.", nullptr));
         label_Warning->setText(QString());
+        pushButton_signUp->setText(QCoreApplication::translate("SignIn", "Sign up", nullptr));
     } // retranslateUi
 
 };

@@ -12,7 +12,7 @@ class Cart : public QDialog
     Q_OBJECT
 
 public:
-    explicit Cart(int*, int, int, int, int, int, QWidget *parent = nullptr);
+    explicit Cart(int*,QString*,int*,int, QWidget *parent = nullptr);
     ~Cart();
 
 private slots:
@@ -33,12 +33,10 @@ private:
     int beveragePrice[5]={0,30,20,10,15};
     QString sauceItem[7]={" ","Ketchup", "Mayonnaise", "Mustard", "Honey Mustard", "Thousand Islands", "BBQ"};
     int saucePrice[7]={0,5,5,5,8,10,7};
-    int ind1;
-    int ind2;
-    int ind3;
-    int ind4;
-    int ind5;
-    int total;
+    int numItems;
+    QString* Iarray;
+    int* Parray;
+    int total=0;
 };
 
 #endif // CART_H

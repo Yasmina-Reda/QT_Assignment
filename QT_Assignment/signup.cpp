@@ -54,7 +54,7 @@ void signUp::on_pushButton_clicked()
     }
 
     else{
-        bool exist=false;
+        exist=false;
         for(int i=*size; i<maxSize&&!exist; i++)
         {
             if(ui->lineEdit_userName->text()==*(userNames+i)) exist=true;

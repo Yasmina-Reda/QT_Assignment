@@ -1,19 +1,21 @@
 #include "cart.h"
 #include "ui_cart.h"
 
-Cart::Cart(int* balance, int Cind,int Bind, int sideind, int sauceind, int bevind, QWidget *parent) :
+Cart::Cart(int* balance, QString* itemsarray, int* pricesarray,int size, QWidget *parent) :
     QDialog(parent),
     ui(new Ui::Cart)
 {
     ui->setupUi(this);
     balanceRef=balance;
-    ind1=Cind;
-    ind2=Bind;
-    ind3=sideind;
-    ind4=sauceind;
-    ind5=bevind;
-    ui->viewitems->setText(chickenItem[ind1]+":"+ QString::number(chickenPrice[ind1]));
-    total=chickenPrice[ind1]+beefPrice[ind2]+sidePrice[ind3]+beveragePrice[ind4]+saucePrice[ind5];
+    Iarray=itemsarray;
+    Parray=pricesarray;
+    numItems=size;
+
+
+    for (int i=0; i<numItems; i++){
+        total+=*(Parray+i);
+        ui->viewitems->setText(ui->viewitems->text()+*(Iarray+i)+"\t"+QString::number(*(Parray+i))+"\n");
+    }
     ui->totalprice->setText(QString::number(total));
     ui->label_balanceVal_cart->setText(QString::number(*balanceRef));
 }

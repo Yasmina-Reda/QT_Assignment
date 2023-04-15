@@ -12,7 +12,7 @@ class Order : public QDialog
     Q_OBJECT
 
 public:
-    explicit Order(int&,QWidget *parent = nullptr);
+    explicit Order(int&, QWidget *parent = nullptr);
     ~Order();
 
 private slots:
@@ -43,18 +43,13 @@ private:
     int beveragePrice[5]={0,30,20,10,15};
     QString sauceItem[7]={" ","Ketchup", "Mayonnaise", "Mustard", "Honey Mustard", "Thousand Islands", "BBQ"};
     int saucePrice[7]={0,5,5,5,8,10,7};
-    QString orderchicken = " ";
-    QString orderbeef = " ";
-    QString orderside = " ";
-    QString ordersauce = " ";
-    QString orderbeverage = " ";
-    bool cartfull=false;
+    QString purchasedItems[20];
+    //QString** pI;
+    int purchasedPrices[20];
+    //int** pP;
+   // bool cartfull=false;
     int numberofitems=0;
-    int ind1;
-    int ind2;
-    int ind3;
-    int ind4;
-    int ind5;
+
 };
 
 #endif // ORDER_H

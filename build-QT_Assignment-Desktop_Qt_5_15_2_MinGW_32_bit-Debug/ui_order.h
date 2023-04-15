@@ -42,6 +42,7 @@ public:
     QComboBox *beverages;
     QComboBox *sauces;
     QLabel *showstatus;
+    QLabel *label_test;
 
     void setupUi(QDialog *Order)
     {
@@ -144,7 +145,10 @@ public:
         sauces->setGeometry(QRect(450, 190, 141, 22));
         showstatus = new QLabel(Order);
         showstatus->setObjectName(QString::fromUtf8("showstatus"));
-        showstatus->setGeometry(QRect(140, 240, 191, 16));
+        showstatus->setGeometry(QRect(90, 240, 541, 20));
+        label_test = new QLabel(Order);
+        label_test->setObjectName(QString::fromUtf8("label_test"));
+        label_test->setGeometry(QRect(130, 340, 321, 31));
 
         retranslateUi(Order);
 
@@ -209,6 +213,7 @@ public:
         sauces->setItemText(6, QCoreApplication::translate("Order", "BBQ", nullptr));
 
         showstatus->setText(QString());
+        label_test->setText(QString());
     } // retranslateUi
 
 };
