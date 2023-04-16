@@ -74,15 +74,15 @@ void Order::on_pushButton_addCart_clicked()
 
 void Order::on_pushButton_viewCart_clicked()
 {
-
+if(numberofitems==0){ui->showstatus->setText("Cart is empty");}
+else{
     Cart opencart(balanceRef,purchasedItems,purchasedPrices, numberofitems);
     opencart.setModal(true);
     opencart.exec();
     //after cart is exited, update displayed balance
     ui->label_balanceVal_order->setText(QString::number(*balanceRef));
-    //numberofitems=0;
-    //ui->label_numItems->setText(QString::number(numberofitems));
-
+    ui->label_showNumItems->setText(QString::number(numberofitems));
+}
 }
 
 
