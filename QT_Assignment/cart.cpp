@@ -47,6 +47,7 @@ void Cart::on_pushButton_clicked()
         *balanceRef-=total;
         ui->label_balanceVal_cart->setText(QString::number(*balanceRef));
         ui->errormessage->setText("Purchased successfully, enjoy your meal! :)");
+        numItems=0;
     }
 }
 
