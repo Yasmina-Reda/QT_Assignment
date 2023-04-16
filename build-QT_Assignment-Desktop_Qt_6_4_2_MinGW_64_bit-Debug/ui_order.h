@@ -42,6 +42,7 @@ public:
     QComboBox *beverages;
     QComboBox *sauces;
     QLabel *showstatus;
+    QLabel *label_test;
 
     void setupUi(QDialog *Order)
     {
@@ -50,7 +51,7 @@ public:
         Order->resize(640, 480);
         label = new QLabel(Order);
         label->setObjectName("label");
-        label->setGeometry(QRect(20, 10, 81, 21));
+        label->setGeometry(QRect(280, 10, 81, 21));
         label_2 = new QLabel(Order);
         label_2->setObjectName("label_2");
         label_2->setGeometry(QRect(40, 40, 221, 21));
@@ -77,10 +78,10 @@ public:
         label_10->setGeometry(QRect(450, 30, 221, 16));
         label_11 = new QLabel(Order);
         label_11->setObjectName("label_11");
-        label_11->setGeometry(QRect(450, 100, 221, 16));
+        label_11->setGeometry(QRect(450, 100, 221, 31));
         label_12 = new QLabel(Order);
         label_12->setObjectName("label_12");
-        label_12->setGeometry(QRect(450, 170, 211, 16));
+        label_12->setGeometry(QRect(450, 180, 211, 16));
         label_balanceVal_order = new QLabel(Order);
         label_balanceVal_order->setObjectName("label_balanceVal_order");
         label_balanceVal_order->setGeometry(QRect(260, 420, 111, 16));
@@ -131,7 +132,7 @@ public:
         beverages->addItem(QString());
         beverages->addItem(QString());
         beverages->setObjectName("beverages");
-        beverages->setGeometry(QRect(450, 130, 141, 22));
+        beverages->setGeometry(QRect(450, 140, 141, 22));
         sauces = new QComboBox(Order);
         sauces->addItem(QString());
         sauces->addItem(QString());
@@ -141,10 +142,13 @@ public:
         sauces->addItem(QString());
         sauces->addItem(QString());
         sauces->setObjectName("sauces");
-        sauces->setGeometry(QRect(450, 190, 141, 22));
+        sauces->setGeometry(QRect(450, 210, 141, 22));
         showstatus = new QLabel(Order);
         showstatus->setObjectName("showstatus");
-        showstatus->setGeometry(QRect(140, 240, 191, 16));
+        showstatus->setGeometry(QRect(90, 240, 541, 20));
+        label_test = new QLabel(Order);
+        label_test->setObjectName("label_test");
+        label_test->setGeometry(QRect(130, 340, 321, 31));
 
         retranslateUi(Order);
 
@@ -209,6 +213,7 @@ public:
         sauces->setItemText(6, QCoreApplication::translate("Order", "BBQ", nullptr));
 
         showstatus->setText(QString());
+        label_test->setText(QString());
     } // retranslateUi
 
 };

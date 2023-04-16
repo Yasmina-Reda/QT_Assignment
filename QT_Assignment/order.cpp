@@ -80,8 +80,7 @@ void Order::on_pushButton_viewCart_clicked()
     opencart.exec();
     //after cart is exited, update displayed balance
     ui->label_balanceVal_order->setText(QString::number(*balanceRef));
-    //numberofitems=0;
-    //ui->label_numItems->setText(QString::number(numberofitems));
+    ui->label_showNumItems->setText(QString::number(numberofitems));
 
 }
 

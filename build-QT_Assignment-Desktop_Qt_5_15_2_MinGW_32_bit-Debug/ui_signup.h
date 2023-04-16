@@ -35,34 +35,34 @@ public:
     {
         if (signUp->objectName().isEmpty())
             signUp->setObjectName(QString::fromUtf8("signUp"));
-        signUp->resize(480, 640);
+        signUp->resize(887, 640);
         pushButton = new QPushButton(signUp);
         pushButton->setObjectName(QString::fromUtf8("pushButton"));
-        pushButton->setGeometry(QRect(370, 90, 91, 31));
+        pushButton->setGeometry(QRect(650, 180, 151, 61));
         label_errorMsg = new QLabel(signUp);
         label_errorMsg->setObjectName(QString::fromUtf8("label_errorMsg"));
         label_errorMsg->setGeometry(QRect(20, 180, 441, 31));
         label_2 = new QLabel(signUp);
         label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setGeometry(QRect(190, 30, 51, 16));
+        label_2->setGeometry(QRect(290, 30, 141, 51));
         label_userName = new QLabel(signUp);
         label_userName->setObjectName(QString::fromUtf8("label_userName"));
-        label_userName->setGeometry(QRect(16, 80, 121, 20));
+        label_userName->setGeometry(QRect(140, 110, 151, 41));
         label_pswd = new QLabel(signUp);
         label_pswd->setObjectName(QString::fromUtf8("label_pswd"));
-        label_pswd->setGeometry(QRect(16, 110, 121, 20));
+        label_pswd->setGeometry(QRect(140, 170, 161, 31));
         label_confirmPswd = new QLabel(signUp);
         label_confirmPswd->setObjectName(QString::fromUtf8("label_confirmPswd"));
-        label_confirmPswd->setGeometry(QRect(16, 140, 121, 20));
+        label_confirmPswd->setGeometry(QRect(140, 230, 181, 41));
         lineEdit_userName = new QLineEdit(signUp);
         lineEdit_userName->setObjectName(QString::fromUtf8("lineEdit_userName"));
-        lineEdit_userName->setGeometry(QRect(210, 70, 113, 20));
+        lineEdit_userName->setGeometry(QRect(410, 110, 151, 41));
         lineEdit_pswd = new QLineEdit(signUp);
         lineEdit_pswd->setObjectName(QString::fromUtf8("lineEdit_pswd"));
-        lineEdit_pswd->setGeometry(QRect(210, 100, 113, 20));
+        lineEdit_pswd->setGeometry(QRect(410, 170, 151, 41));
         lineEdit_confirmPswd = new QLineEdit(signUp);
         lineEdit_confirmPswd->setObjectName(QString::fromUtf8("lineEdit_confirmPswd"));
-        lineEdit_confirmPswd->setGeometry(QRect(210, 130, 113, 20));
+        lineEdit_confirmPswd->setGeometry(QRect(410, 230, 151, 41));
 
         retranslateUi(signUp);
 
