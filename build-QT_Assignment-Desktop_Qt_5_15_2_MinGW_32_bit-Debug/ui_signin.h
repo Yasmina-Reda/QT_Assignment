@@ -48,7 +48,7 @@ public:
         centralwidget->setObjectName(QString::fromUtf8("centralwidget"));
         label_WLCM = new QLabel(centralwidget);
         label_WLCM->setObjectName(QString::fromUtf8("label_WLCM"));
-        label_WLCM->setGeometry(QRect(350, 10, 321, 31));
+        label_WLCM->setGeometry(QRect(330, 10, 321, 31));
         label_Prompt = new QLabel(centralwidget);
         label_Prompt->setObjectName(QString::fromUtf8("label_Prompt"));
         label_Prompt->setGeometry(QRect(310, 40, 411, 31));
@@ -96,7 +96,7 @@ public:
     void retranslateUi(QMainWindow *SignIn)
     {
         SignIn->setWindowTitle(QCoreApplication::translate("SignIn", "SignIn", nullptr));
-        label_WLCM->setText(QCoreApplication::translate("SignIn", "Welcome To Our Outlet!", nullptr));
+        label_WLCM->setText(QCoreApplication::translate("SignIn", "Welcome To Our Food Outlet!", nullptr));
         label_Prompt->setText(QCoreApplication::translate("SignIn", "Please Sign in to Your Account To Proceed", nullptr));
         label_userprompt->setText(QCoreApplication::translate("SignIn", "Username:", nullptr));
         label_pswdprompt->setText(QCoreApplication::translate("SignIn", "Password:", nullptr));

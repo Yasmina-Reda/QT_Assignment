@@ -29,10 +29,10 @@
   <widget class="QLabel" name="label_errorMsg">
    <property name="geometry">
     <rect>
-     <x>130</x>
+     <x>70</x>
      <y>300</y>
-     <width>441</width>
-     <height>31</height>
+     <width>741</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="text">

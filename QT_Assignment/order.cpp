@@ -35,6 +35,7 @@ void Order::on_pushButton_addCart_clicked()
         //ui->label_test->setText(QString::number(purchasedPrices[numberofitems]));
         numberofitems++;
         ui->chicken->setCurrentText(0);
+        ui->label_showPrice->clear();
     }
     if(ui->sideoptions->currentIndex()!=0){
 
@@ -42,6 +43,7 @@ void Order::on_pushButton_addCart_clicked()
         purchasedPrices[numberofitems]=sidePrice[ui->sideoptions->currentIndex()];
         numberofitems++;
         ui->sideoptions->setCurrentText(0);
+         ui->label_showPrice->clear();
     }
     if(ui->beverages->currentIndex()!=0) {
 
@@ -49,6 +51,7 @@ void Order::on_pushButton_addCart_clicked()
         purchasedPrices[numberofitems]=beveragePrice[ui->beverages->currentIndex()];
         numberofitems++;
         ui->beverages->setCurrentText(0);
+        ui->label_showPrice->clear();
     }
 
     if(ui->meat->currentIndex()!=0) {
@@ -57,6 +60,7 @@ void Order::on_pushButton_addCart_clicked()
         purchasedPrices[numberofitems]=beefPrice[ui->meat->currentIndex()];
         numberofitems++;
         ui->meat->setCurrentText(0);
+        ui->label_showPrice->clear();
     }
     if(ui->sauces->currentIndex()!=0) {
 
@@ -64,6 +68,7 @@ void Order::on_pushButton_addCart_clicked()
         purchasedPrices[numberofitems]=saucePrice[ui->sauces->currentIndex()];
         numberofitems++;
         ui->sauces->setCurrentText(0);
+        ui->label_showPrice->clear();
     }
     ui->label_showNumItems->setText(QString::number(numberofitems));
     //if numitems=0 display error message

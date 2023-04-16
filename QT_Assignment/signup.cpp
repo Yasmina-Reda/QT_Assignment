@@ -77,7 +77,7 @@ void signUp::on_pushButton_clicked()
                 *(passwords+*size)=ui->lineEdit_pswd->text();
                 *(accounts+*size)=0;
                 (*size)++;
-                ui->label_errorMsg->setText("Account successfully created. Proceed to checkout to charge your balance");
+                ui->label_errorMsg->setText("Account successfully created. Please sign in.");
             }
         }
 

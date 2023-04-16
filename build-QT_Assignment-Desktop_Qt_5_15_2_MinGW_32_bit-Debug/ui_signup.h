@@ -41,7 +41,7 @@ public:
         pushButton->setGeometry(QRect(650, 180, 151, 61));
         label_errorMsg = new QLabel(signUp);
         label_errorMsg->setObjectName(QString::fromUtf8("label_errorMsg"));
-        label_errorMsg->setGeometry(QRect(20, 180, 441, 31));
+        label_errorMsg->setGeometry(QRect(70, 300, 741, 41));
         label_2 = new QLabel(signUp);
         label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setGeometry(QRect(290, 30, 141, 51));
