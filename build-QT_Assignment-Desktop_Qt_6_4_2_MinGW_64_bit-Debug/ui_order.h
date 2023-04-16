@@ -42,7 +42,6 @@ public:
     QComboBox *beverages;
     QComboBox *sauces;
     QLabel *showstatus;
-    QLabel *label_test;
 
     void setupUi(QDialog *Order)
     {
@@ -105,7 +104,7 @@ public:
         chicken->addItem(QString());
         chicken->addItem(QString());
         chicken->setObjectName("chicken");
-        chicken->setGeometry(QRect(40, 70, 141, 22));
+        chicken->setGeometry(QRect(40, 70, 191, 22));
         meat = new QComboBox(Order);
         meat->addItem(QString());
         meat->addItem(QString());
@@ -116,7 +115,7 @@ public:
         meat->addItem(QString());
         meat->addItem(QString());
         meat->setObjectName("meat");
-        meat->setGeometry(QRect(40, 150, 141, 22));
+        meat->setGeometry(QRect(40, 150, 191, 22));
         sideoptions = new QComboBox(Order);
         sideoptions->addItem(QString());
         sideoptions->addItem(QString());
@@ -146,9 +145,6 @@ public:
         showstatus = new QLabel(Order);
         showstatus->setObjectName("showstatus");
         showstatus->setGeometry(QRect(90, 240, 541, 20));
-        label_test = new QLabel(Order);
-        label_test->setObjectName("label_test");
-        label_test->setGeometry(QRect(130, 340, 321, 31));
 
         retranslateUi(Order);
 
@@ -213,7 +209,6 @@ public:
         sauces->setItemText(6, QCoreApplication::translate("Order", "BBQ", nullptr));
 
         showstatus->setText(QString());
-        label_test->setText(QString());
     } // retranslateUi
 
 };

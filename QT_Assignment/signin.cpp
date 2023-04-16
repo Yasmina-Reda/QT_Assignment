@@ -47,7 +47,7 @@ void SignIn::on_pushButton_signin_clicked()
            orderWindow.exec();
            //after the window is exited, sign out and reset fields
            ui->lineEdit_userName->clear(); ui->lineEdit_pswd->clear();ui->label_balanceVal->clear();
-           ui->label_Warning->setText("You have been SRigned Out");
+           ui->label_Warning->setText("You have been Signed Out");
         }
     }
 }

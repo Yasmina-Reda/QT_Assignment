@@ -39,10 +39,10 @@ public:
         Cart->resize(640, 480);
         pushButton_Recharge = new QPushButton(Cart);
         pushButton_Recharge->setObjectName("pushButton_Recharge");
-        pushButton_Recharge->setGeometry(QRect(110, 420, 231, 41));
+        pushButton_Recharge->setGeometry(QRect(40, 420, 231, 41));
         lineEdit_Recharge = new QLineEdit(Cart);
         lineEdit_Recharge->setObjectName("lineEdit_Recharge");
-        lineEdit_Recharge->setGeometry(QRect(410, 430, 171, 31));
+        lineEdit_Recharge->setGeometry(QRect(320, 420, 261, 31));
         label_balanceVal_cart = new QLabel(Cart);
         label_balanceVal_cart->setObjectName("label_balanceVal_cart");
         label_balanceVal_cart->setGeometry(QRect(250, 350, 61, 16));

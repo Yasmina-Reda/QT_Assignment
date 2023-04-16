@@ -37,6 +37,7 @@ private:
     QString* Iarray;
     int* Parray;
     int total=0;
+    int buyCount=0;
 };
 
 #endif // CART_H
