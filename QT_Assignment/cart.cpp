@@ -14,7 +14,7 @@ Cart::Cart(int* balance, QString* itemsarray, int* pricesarray,int size, QWidget
 
     for (int i=0; i<numItems; i++){
         total+=*(Parray+i);
-        ui->viewitems->setText(ui->viewitems->text()+*(Iarray+i)+"\t"+QString::number(*(Parray+i))+"\n");
+        ui->viewitems->setText(ui->viewitems->text()+*(Iarray+i)+":"+"\t"+QString::number(*(Parray+i))+"\n");
     }
     ui->totalprice->setText(QString::number(total));
     ui->label_balanceVal_cart->setText(QString::number(*balanceRef));
@@ -46,7 +46,7 @@ void Cart::on_pushButton_clicked()
     else {
         *balanceRef-=total;
         ui->label_balanceVal_cart->setText(QString::number(*balanceRef));
-        ui->errormessage->setText("Purchased successfully, enjoy your meal!");
+        ui->errormessage->setText("Purchased successfully, enjoy your meal! :)");
     }
 }
 

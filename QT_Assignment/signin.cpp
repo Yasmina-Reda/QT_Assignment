@@ -40,14 +40,14 @@ void SignIn::on_pushButton_signin_clicked()
         else{
            ui->label_Warning->setText("Sign in Successful. Redirecting to Order Window");
            //display balance
-           ui->label_balanceVal->setText(QString::number(AccBalance[i-1]));
+           ui->label_balanceVal->setText(QString::number(AccBalance[i-1])+"\t"+"L.E.");
            //senf balance as parameter to next window
            Order orderWindow(AccBalance[i-1]);
            orderWindow.setModal(true);
            orderWindow.exec();
            //after the window is exited, sign out and reset fields
            ui->lineEdit_userName->clear(); ui->lineEdit_pswd->clear();ui->label_balanceVal->clear();
-           ui->label_Warning->setText("You have been Signed Out");
+           ui->label_Warning->setText("You have been SRigned Out");
         }
     }
 }

@@ -51,7 +51,7 @@ public:
         Order->resize(640, 480);
         label = new QLabel(Order);
         label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(20, 10, 81, 21));
+        label->setGeometry(QRect(280, 10, 81, 21));
         label_2 = new QLabel(Order);
         label_2->setObjectName(QString::fromUtf8("label_2"));
         label_2->setGeometry(QRect(40, 40, 221, 21));
@@ -78,10 +78,10 @@ public:
         label_10->setGeometry(QRect(450, 30, 221, 16));
         label_11 = new QLabel(Order);
         label_11->setObjectName(QString::fromUtf8("label_11"));
-        label_11->setGeometry(QRect(450, 100, 221, 16));
+        label_11->setGeometry(QRect(450, 100, 221, 31));
         label_12 = new QLabel(Order);
         label_12->setObjectName(QString::fromUtf8("label_12"));
-        label_12->setGeometry(QRect(450, 170, 211, 16));
+        label_12->setGeometry(QRect(450, 180, 211, 16));
         label_balanceVal_order = new QLabel(Order);
         label_balanceVal_order->setObjectName(QString::fromUtf8("label_balanceVal_order"));
         label_balanceVal_order->setGeometry(QRect(260, 420, 111, 16));
@@ -132,7 +132,7 @@ public:
         beverages->addItem(QString());
         beverages->addItem(QString());
         beverages->setObjectName(QString::fromUtf8("beverages"));
-        beverages->setGeometry(QRect(450, 130, 141, 22));
+        beverages->setGeometry(QRect(450, 140, 141, 22));
         sauces = new QComboBox(Order);
         sauces->addItem(QString());
         sauces->addItem(QString());
@@ -142,7 +142,7 @@ public:
         sauces->addItem(QString());
         sauces->addItem(QString());
         sauces->setObjectName(QString::fromUtf8("sauces"));
-        sauces->setGeometry(QRect(450, 190, 141, 22));
+        sauces->setGeometry(QRect(450, 210, 141, 22));
         showstatus = new QLabel(Order);
         showstatus->setObjectName(QString::fromUtf8("showstatus"));
         showstatus->setGeometry(QRect(90, 240, 541, 20));
